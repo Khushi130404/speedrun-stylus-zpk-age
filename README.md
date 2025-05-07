@@ -26,6 +26,35 @@ Before starting, ensure you have the following installed:
 - [Git](https://git-scm.com/downloads)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
+### Install Rust and Cargo
+
+1. Install Rust using `rustup`, which is the recommended way to install Rust:
+   ```bash
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
+   Follow the on-screen instructions to complete the installation.
+
+2. After installation, ensure that the Cargo and Rust binaries are in your `PATH`. You can do this by adding the following line to your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`):
+   ```bash
+   export PATH="$HOME/.cargo/bin:$PATH"
+   ```
+   Then, run:
+   ```bash
+   source ~/.bashrc  # or source ~/.zshrc
+   ```
+
+### Install Circom
+
+1. Install `circom` globally using npm:
+   ```bash
+   npm install -g circom
+   ```
+
+2. Verify the installation by checking the version:
+   ```bash
+   circom --version
+   ```
+
 ### Clone the Repository
 
 ```bash
@@ -141,14 +170,14 @@ bash run-dev-node.sh
 To deploy your app to Vercel:
 
 ```bash
-yarn vercel
+vercel
 ```
 
 Follow Vercel's instructions to get a public URL.
 
 For production deployment:
 ```bash
-yarn vercel --prod
+vercel --prod
 ```
 
 ## Checkpoint 5: 📜 Contract Verification
