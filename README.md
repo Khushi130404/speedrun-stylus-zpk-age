@@ -1,5 +1,7 @@
 # 🚩 Challenge #5 : ZKP - Age Verifier
 
+> ⚠️ **Important:** Please complete **Challenge #4** first if you haven't already, as it contains essential instructions related to all upcoming challenges.
+
 🎫 Build an Age Verifier using Zero-Knowledge Proofs (ZKP) on Arbitrum Stylus:
 
 👷‍♀️ In this challenge, you'll build and deploy a smart contract that utilizes Zero-Knowledge Proofs for private age verification. You'll work with ZKP circuits, deploy them to an Arbitrum Stylus dev node, and create a frontend that allows users to generate and verify proofs! 🚀
@@ -58,9 +60,8 @@ Before starting, ensure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/abhi152003/speedrun_stylus.git
+git clone -b stylus-zkp-age-verifier https://github.com/abhi152003/speedrun_stylus.git
 cd speedrun_stylus
-git checkout stylus-zkp-age-verifier
 ```
 
 ### Install Dependencies
@@ -193,3 +194,5 @@ Replace `$deployment_tx` with your deployment transaction hash.
 ## 🏁 Next Steps
 
 Explore more challenges or contribute to this project!
+
+> 🏃 Head to your next challenge [here](https://speedrun-stylus.vercel.app/challenge/zkp-balance).
