@@ -60,8 +60,8 @@ export default function ModelVerifier() {
   useEffect(() => {
     const loadContract = async () => {
       try {
-        const provider = new ethers.JsonRpcProvider("http://localhost:8547");
-        const privateKey = "0xb6b15c8cb491557369f3c7d2c287b053eb229daa9c22138887752191c9520659";
+        const provider = new ethers.JsonRpcProvider(process.env.NEXT_PUBLIC_RPC_URL || "");
+        const privateKey = process.env.PRIVATE_KEY || "";
         const newSigner = new ethers.Wallet(privateKey, provider);
         const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, newSigner);
         setContract(contract);
