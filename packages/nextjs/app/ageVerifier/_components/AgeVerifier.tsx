@@ -5,7 +5,7 @@ import { ethers } from "ethers";
 import { groth16 } from "snarkjs";
 
 // ABI and Contract Address
-const CONTRACT_ADDRESS = "0x6FFcf6535E4a6f875A18911d5E341dA909Adf572";
+const CONTRACT_ADDRESS = "0xda52b25ddB0e3B9CC393b0690Ac62245Ac772527";
 const CONTRACT_ABI = [
   {
     inputs: [
