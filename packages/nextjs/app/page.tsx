@@ -33,8 +33,8 @@ const Home: NextPage = () => {
               <BugAntIcon className="h-8 w-8 fill-secondary" />
               <p>
                 Tinker with your smart contract using the{" "}
-                <Link href="/debug" passHref className="link">
-                  Debug Contracts
+                <Link href="/ageVerifier" passHref className="link">
+                  Age Verifier
                 </Link>{" "}
                 tab.
               </p>
